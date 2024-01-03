@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Традиционна българска кухня</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/png" href="Images/logo.png"/>
+
+</head>
+<body>
+    <header>
+        <div class="auth-buttons">
+            <button id="login-btn">Вход</button>
+            <button id="register-btn">Регистрация</button>
+        </div>
+        <div class="zaglavie">
+            <h1><span id="typing-text"></span></h1>
+        </div>  
+    </header>
+
+    <nav>
+        <img src="Images/logo.png" alt="Logo" id="nav-logo">
+        <a href="#about">За нас</a>
+        <a href="#dishes">Какво предлагаме</a>
+        <a href="#contact">Поръчай</a>
+        <a href="email">Контакти</a>
+    </nav>
+    <div id="login-form" class="form-popup">
+        <form id="loginForm">
+            <input type="text" placeholder="Име" name="username" required>
+            <input type="password" placeholder="Парола" name="password" required>
+            <button type="submit">Вход</button>
+        </form>
+    </div>
+    
+    <div id="register-form" class="form-popup">
+        <form id="registerForm">
+            <input type="text" placeholder="Име" name="fullname" required>
+            <input type="text" placeholder="Дата на раждане" name="dob" onfocus="(this.type='date')" required>
+            <input type="tel" placeholder="Телефон за връзка" name="phone" required>
+            <input type="email" placeholder="Имейл" name="email" required>
+            <input type="password" placeholder="Парола" name="password" required>
+            <input type="password" placeholder="Повтори паролата" name="repeatpassword" required>
+            <button type="submit">Регистрация</button>
+        </form>
+    </div>
+    <section id="about">
+        <h2>About Bulgarian Cuisine</h2>
+        <p>Introduce visitors to the rich and diverse Bulgarian culinary traditions.</p>
+    </section>
+
+    <section id="dishes">
+        <h2>Popular Dishes</h2>
+
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Provide contact information or a form for visitors to reach out.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Традиционна българска кухня</p>
+    </footer>
+</body>
+</html>
